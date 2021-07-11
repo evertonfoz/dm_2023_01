@@ -1,4 +1,4 @@
-# Neste repositório você encontrará todos os trabalhos apresentados e desenvolvidos durante a disciplina de desenvolvimento de aplicativos para dispositivos móveis
+# Neste repositório você encontrará todos os trabalhos apresentados e desenvolvidos pelos acadêmicos e acadêmicas durante a disciplina de desenvolvimento de aplicativos para dispositivos móveis
 
 E aí pessoal, tudo bem? Este repositório contém atividades dos acadêmicos e acadêmicas do semestre 2021/01. São arquivos submetidos por eles e elas e que têm compartilhamento público. O repositório fica disponível apenas durante a execução do semestre acadêmico.
 
