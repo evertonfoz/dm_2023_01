@@ -1,6 +1,6 @@
-# Neste repositório você encontrará todos os trabalhos apresentados e desenvolvidos pelos acadêmicos e acadêmicas durante a disciplina de desenvolvimento de aplicativos para dispositivos móveis
+# Neste repositório você encontrará todos os trabalhos apresentados e desenvolvidos pelos acadêmicos e acadêmicas durante a disciplina de programação orientada à objetos
 
-E aí pessoal, tudo bem? Este repositório contém atividades dos acadêmicos e acadêmicas do semestre 2021/01. São arquivos submetidos por eles e elas e que têm compartilhamento público. O repositório fica disponível apenas durante a execução do semestre acadêmico.
+E aí pessoal, tudo bem? Este repositório contém atividades dos acadêmicos e acadêmicas do semestre 2021/02. São arquivos submetidos por eles e elas e que têm compartilhamento público. O repositório fica disponível apenas durante a execução do semestre acadêmico.
 
 Se você quiser, pode ver meus livros publicados pela casa do código em https://www.casadocodigo.com.br/search?type=product&q=everton, ou seguir meus canais:
 
@@ -11,8 +11,6 @@ Se você quiser, pode ver meus livros publicados pela casa do código em https:/
 
 Se precisar falar diretamente comigo, meu email é evertoncoimbra@gmail.com. Posso demorar um pouco para responder, mas sempre respondo.
 
-Você pode também me encontrar nas redes socias indicadas pela figura a seguir.
-
-![Minhas rede sociais. {w=50%}](https://github.com/evertonfoz/persitencia-em-flutter/blob/main/redessociais.png)
+Você pode também me encontrar nas redes socias indicadas em https://linktr.ee/evertoncoimbradearaujo.
 
 Sucesso
