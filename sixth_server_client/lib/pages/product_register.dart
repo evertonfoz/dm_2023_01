@@ -19,13 +19,13 @@ class ProductRegister extends StatelessWidget {
             try {
               final Response response = await client.get(
                 Uri.parse(
-                  'http://192.168.102.140:4040/produtos',
+                  'http://10.55.0.4:4040/produtos',
                 ),
-                headers: {
-                  'Content-Type': 'application/json',
-                  "Access-Control-Allow-Origin": "*"
-                  // 'Authorization': 'Bearer $token'
-                },
+                // headers: {
+                //   'Content-Type': 'application/json',
+                //   "Access-Control-Allow-Origin": "*"
+                //   // 'Authorization': 'Bearer $token'
+                // },
               );
               // final Response response = await client.post(
               //   Uri.parse('http://10.55.0.4:4040/produtos'),
