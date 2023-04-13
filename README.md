@@ -1,6 +1,6 @@
-# Neste repositório você encontrará todos os trabalhos apresentados e desenvolvidos pelos acadêmicos e acadêmicas durante a disciplina de programação orientada à objetos
+# Neste repositório você encontrará todos os trabalhos apresentados e desenvolvidos pelos acadêmicos e acadêmicas durante a disciplina de Desenvolvimento de Aplicativos para Dispositivos Móveis
 
-E aí pessoal, tudo bem? Este repositório contém atividades dos acadêmicos e acadêmicas do semestre 2021/02. São arquivos submetidos por eles e elas e que têm compartilhamento público. O repositório fica disponível apenas durante a execução do semestre acadêmico.
+E aí pessoal, tudo bem? Este repositório contém atividades dos acadêmicos e acadêmicas do semestre 2023/01. São arquivos submetidos por eles e elas e que têm compartilhamento público. O repositório fica disponível apenas durante a execução do semestre acadêmico.
 
 Se você quiser, pode ver meus livros publicados pela casa do código em https://www.casadocodigo.com.br/search?type=product&q=everton, ou seguir meus canais:
 
