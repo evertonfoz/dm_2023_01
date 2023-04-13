@@ -8,6 +8,8 @@ Se você quiser, pode ver meus livros publicados pela casa do código em https:/
 2. POO com C# (https://www.youtube.com/channel/UCQ1kZ0IoMJa9P_qhMxEdRqA/playlists)
 3. TDS com C# (https://www.youtube.com/channel/UC_YjCoIJ6C4o3AnYuRMQ37w/playlists)
 
+Você pode também me seguir pelo Instagram @evertoncoimbradearaujo e prestigiar meu Blog em www.vamosfluttear.com.br
+
 
 Se precisar falar diretamente comigo, meu email é evertoncoimbra@gmail.com. Posso demorar um pouco para responder, mas sempre respondo.
 
