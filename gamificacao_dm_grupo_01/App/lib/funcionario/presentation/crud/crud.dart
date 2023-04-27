@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../models/funcionario.dart';
+import '../../../models/funcionario.dart';
+import 'widgets/nome.dart';
 
 class FuncionarioForm extends StatefulWidget {
   const FuncionarioForm({Key? key}) : super(key: key);
@@ -25,24 +26,16 @@ class _FuncionarioPageState extends State<FuncionarioForm> {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8),
         child: Form(
+          autovalidateMode: AutovalidateMode.onUserInteraction,
           key: _formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
                 children: [
+                  NomeFuncionarioField(controller: _nomeController),
                   TextFormField(
-                    controller: _nomeController,
                     textInputAction: TextInputAction.next,
-                    decoration: const InputDecoration(labelText: 'Nome'),
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'Por favor, insira o nome';
-                      }
-                      return null;
-                    },
-                  ),
-                  TextFormField(
                     controller: _sobrenomeController,
                     decoration: const InputDecoration(labelText: 'Sobrenome'),
                     validator: (value) {
@@ -53,6 +46,7 @@ class _FuncionarioPageState extends State<FuncionarioForm> {
                     },
                   ),
                   TextFormField(
+                    textInputAction: TextInputAction.next,
                     controller: _enderecoController,
                     decoration: const InputDecoration(labelText: 'Endereco'),
                     validator: (value) {
@@ -72,6 +66,9 @@ class _FuncionarioPageState extends State<FuncionarioForm> {
                         return 'Por favor, insira o telefone';
                       }
                       return null;
+                    },
+                    onTapOutside: (event) {
+                      FocusScope.of(context).unfocus();
                     },
                   ),
                 ],

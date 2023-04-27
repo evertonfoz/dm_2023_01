@@ -1,7 +1,7 @@
-import 'package:aula5/shared/dark_mode_control.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
+import '../../shared/functions/dark_mode_control.dart';
 import 'mobx/configuracoes.dart';
 
 // ignore: must_be_immutable

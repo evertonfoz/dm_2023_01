@@ -15,7 +15,7 @@ class Departamento {
 
   static Future<Database> openDb() async {
     final db = await openDatabase(
-      'departamentos.db',
+      'gamificacao02.db',
       version: 1,
       onCreate: (db, version) {
         return Departamento.createTable(db);
@@ -71,7 +71,7 @@ class Departamento {
 
   Map<String, dynamic> toMap() {
     return {
-      'id': id,
+      'departamentoID': id,
       'nome': nome,
       'descricao': descricao,
     };
@@ -79,7 +79,7 @@ class Departamento {
 
   static Departamento fromMap(Map<String, dynamic> map) {
     return Departamento(
-      id: map['id'],
+      id: map['departamentoID'],
       nome: map['nome'],
       descricao: map['descricao'],
     );
