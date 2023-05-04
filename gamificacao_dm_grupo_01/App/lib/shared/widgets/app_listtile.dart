@@ -7,6 +7,7 @@ class AppListTile extends StatelessWidget {
   final String? line01Text;
   final String? line02Text;
   final String? imageURL;
+  final VoidCallback? onEditPressed;
 
   const AppListTile({
     super.key,
@@ -15,6 +16,7 @@ class AppListTile extends StatelessWidget {
     this.line01Text,
     this.line02Text,
     this.imageURL,
+    this.onEditPressed,
   });
 
   @override
@@ -68,10 +70,13 @@ class AppListTile extends StatelessWidget {
                     ),
                     Text(line01Text ?? ''),
                     Text(line02Text ?? ''),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Lottie.asset('assets/lotties/edit.json',
-                          width: 30, height: 30),
+                    InkWell(
+                      onTap: onEditPressed,
+                      child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Lottie.asset('assets/lotties/edit.json',
+                            width: 30, height: 30),
+                      ),
                     ),
                   ],
                 ),

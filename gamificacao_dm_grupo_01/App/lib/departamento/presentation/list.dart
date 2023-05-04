@@ -51,8 +51,8 @@ class _FuncionarioPageState extends State<DepartamentoList> {
                       isOdd: index.isOdd,
                       title: departamento.nome,
                       line01Text: departamento.descricao,
-                      // imageURL:
-                      //     'https://unicardio.com.br/wp-content/uploads/2020/11/4-cuidados-com-o-coracao-das-criancas.png',
+                      imageURL:
+                          'https://unicardio.com.br/wp-content/uploads/2020/11/4-cuidados-com-o-coracao-das-criancas.png',
                     );
                   },
                 );

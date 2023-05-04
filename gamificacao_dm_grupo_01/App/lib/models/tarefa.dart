@@ -11,7 +11,7 @@ class Tarefa {
   DateTime dataInicio;
   DateTime dataTermino;
   String status;
-  Funcionario funcionario;
+  // Funcionario funcionario;
   Cliente cliente;
   Departamento? departamento;
   Projeto? projeto;
@@ -22,7 +22,7 @@ class Tarefa {
     required this.dataInicio,
     required this.dataTermino,
     required this.status,
-    required this.funcionario,
+    // required this.funcionario,
     required this.cliente,
     this.departamento,
     this.projeto,
@@ -111,7 +111,7 @@ class Tarefa {
       'data_inicio': dataInicio.millisecondsSinceEpoch,
       'data_termino': dataTermino.millisecondsSinceEpoch,
       'status': status,
-      'funcionario_id': funcionario.id,
+      // 'funcionario_id': funcionario.id,
       'cliente_id': cliente.id,
       'departamento_id': departamento?.id,
       'projeto_id': projeto?.id,
@@ -125,8 +125,8 @@ class Tarefa {
       status: map['status'],
       dataInicio: DateTime.fromMillisecondsSinceEpoch(map['data_inicio']),
       dataTermino: DateTime.fromMillisecondsSinceEpoch(map['data_termino']),
-      funcionario:
-          Funcionario(id: map['funcionario_id'], nome: map['funcionario_nome']),
+      // funcionario:
+      //     Funcionario(id: map['funcionario_id'], nome: map['funcionario_nome']),
       cliente: Cliente(id: map['cliente_id']),
       departamento: map['departamento_id'] != null
           ? Departamento(id: map['departamento_id'])

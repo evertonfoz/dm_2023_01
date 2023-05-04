@@ -1,3 +1,4 @@
+import 'package:aula5/funcionario/data/datasources/delete.dart';
 import 'package:aula5/funcionario/data/model/funcionario.dart';
 import 'package:aula5/models/funcionario.dart';
 import 'package:flutter/material.dart';
@@ -46,13 +47,89 @@ class _FuncionarioPageState extends State<FuncionarioList> {
                   itemBuilder: (BuildContext context, int index) {
                     final FuncionarioModel funcionario = funcionarios[index];
 
-                    return AppListTile(
-                      isOdd: index.isOdd,
-                      title: funcionario.nomeCompleto,
-                      line01Text: funcionario.endereco,
-                      line02Text: funcionario.telefone,
-                      imageURL:
-                          'https://tudocommoda.com/wp-content/uploads/2022/01/pessoa-interessante.png',
+                    return Dismissible(
+                      onDismissed: (direction) {
+                        FuncionarioDeleteDataSource()
+                            .delete(id: funcionario.funcionarioID!);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            showCloseIcon: true,
+                            closeIconColor: Colors.white,
+                            backgroundColor: Colors.indigo,
+                            content: Text(
+                              'Remoção bem sucedida',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        );
+                      },
+                      confirmDismiss: (direction) async {
+                        return showDialog(
+                            context: context,
+                            builder: (context) {
+                              return AlertDialog(
+                                title: const Text('Confirma remover?'),
+                                content: Text(
+                                    'Remover ${funcionario.nome.toUpperCase()}?'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop(false);
+                                    },
+                                    child: const Text('Cancelar'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop(true);
+                                    },
+                                    child: const Text('OK'),
+                                  ),
+                                ],
+                              );
+                            });
+                      },
+                      direction: DismissDirection.endToStart,
+                      background: Container(
+                        color: Colors.red,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: const [
+                            Text(
+                              'Remover',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Icon(
+                              Icons.delete,
+                              color: Colors.white,
+                              size: 32,
+                            ),
+                          ],
+                        ),
+                      ),
+                      key: Key('$index'),
+                      child: AppListTile(
+                        isOdd: index.isOdd,
+                        title: funcionario.nomeCompleto,
+                        line01Text: funcionario.endereco,
+                        line02Text: funcionario.telefone,
+                        imageURL:
+                            'https://tudocommoda.com/wp-content/uploads/2022/01/pessoa-interessante.png',
+                        onEditPressed: () async {
+                          await Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => FuncionarioForm(
+                                funcionarioModel: funcionario,
+                              ),
+                            ),
+                          );
+                          setState(() {});
+                        },
+                      ),
                     );
                   },
                 );
@@ -65,11 +142,12 @@ class _FuncionarioPageState extends State<FuncionarioList> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
+        onPressed: () async {
+          await Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const FuncionarioForm()),
           );
+          setState(() {});
         },
         backgroundColor: Colors.blue,
         child: const Icon(Icons.add),
