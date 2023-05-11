@@ -1,0 +1,23 @@
+﻿version: '3.8'
+
+services:
+  postgres:
+    image: dm_postgres_image_to_service
+    container_name: postgress_to_dm_with_data
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+#    volumes:
+ #     - dm_volume:/var/lib/postgresql/data
+
+  webapi:
+    build: .
+    container_name: dm_webapi_container_with_compose
+    ports:
+      - 8000:8000
+    depends_on:
+      - postgres
+
+#volumes:
+#    dm_volume:

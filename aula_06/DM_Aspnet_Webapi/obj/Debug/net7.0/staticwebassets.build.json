@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yEYquQBBweD9lNgVhSO4CtmMJ5sS9K2W6j0fkq6y3IY=",
+  "Source": "DM_Aspnet_Webapi",
+  "BasePath": "_content/DM_Aspnet_Webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

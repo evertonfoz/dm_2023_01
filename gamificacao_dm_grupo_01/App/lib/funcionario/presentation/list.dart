@@ -1,12 +1,11 @@
-import 'package:aula5/funcionario/data/datasources/delete.dart';
+import 'package:aula5/funcionario/data/datasources/remote_api/list.dart';
 import 'package:aula5/funcionario/data/model/funcionario.dart';
-import 'package:aula5/models/funcionario.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 import '../../shared/widgets/app_listtile.dart';
 import '../../widgets/drawer_pages.dart';
-import '../data/datasources/list.dart';
+import '../data/datasources/sqlite/delete.dart';
+import '../data/datasources/sqlite/list.dart';
 import 'crud/crud.dart';
 
 class FuncionarioList extends StatefulWidget {
@@ -29,7 +28,7 @@ class _FuncionarioPageState extends State<FuncionarioList> {
       body: Padding(
         padding: const EdgeInsets.only(top: 2),
         child: FutureBuilder<List<FuncionarioModel>>(
-          future: FuncionarioListDataSource().getAll(),
+          future: FuncionarioListRemoteAPIDataSource().getAll(),
           initialData: const [],
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             switch (snapshot.connectionState) {
@@ -112,10 +111,11 @@ class _FuncionarioPageState extends State<FuncionarioList> {
                       ),
                       key: Key('$index'),
                       child: AppListTile(
+                        title: funcionario.nome,
                         isOdd: index.isOdd,
-                        title: funcionario.nomeCompleto,
-                        line01Text: funcionario.endereco,
-                        line02Text: funcionario.telefone,
+                        // title: funcionario.nomeCompleto,
+                        // line01Text: funcionario.endereco,
+                        // line02Text: funcionario.telefone,
                         imageURL:
                             'https://tudocommoda.com/wp-content/uploads/2022/01/pessoa-interessante.png',
                         onEditPressed: () async {

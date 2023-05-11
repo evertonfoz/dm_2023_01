@@ -1,4 +1,4 @@
-import '../../../core/database/sqflite_database.dart';
+import '../../../../core/database/sqflite_database.dart';
 
 class FuncionarioDeleteDataSource {
   Future<int> delete({required int id}) async {

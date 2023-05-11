@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/DM_Aspnet_Webapi.props" />
+</Project>

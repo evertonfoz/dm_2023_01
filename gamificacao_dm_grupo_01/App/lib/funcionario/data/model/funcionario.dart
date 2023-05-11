@@ -8,9 +8,9 @@ class FuncionarioModel extends FuncionarioEntity {
   const FuncionarioModel({
     super.funcionarioID,
     required super.nome,
-    required super.sobrenome,
-    required super.endereco,
-    required super.telefone,
+    // required super.sobrenome,
+    // required super.endereco,
+    // required super.telefone,
   });
 
   factory FuncionarioModel.fromJson(Map<String, dynamic> json) =>

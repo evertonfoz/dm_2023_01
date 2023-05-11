@@ -4,8 +4,8 @@ import 'package:aula5/funcionario/presentation/crud/widgets/sobrenome.dart';
 import 'package:aula5/funcionario/presentation/crud/widgets/telefone.dart';
 import 'package:flutter/material.dart';
 
-import '../../data/datasources/insert.dart';
-import '../../data/datasources/update.dart';
+import '../../data/datasources/sqlite/insert.dart';
+import '../../data/datasources/sqlite/update.dart';
 import 'widgets/endereco.dart';
 import 'widgets/nome.dart';
 
@@ -34,9 +34,9 @@ class _FuncionarioPageState extends State<FuncionarioForm> {
   void initState() {
     if (widget.funcionarioModel != null) {
       _nomeController.text = widget.funcionarioModel!.nome;
-      _sobrenomeController.text = widget.funcionarioModel!.sobrenome;
-      _enderecoController.text = widget.funcionarioModel!.endereco;
-      _telefoneController.text = widget.funcionarioModel!.telefone;
+      // _sobrenomeController.text = widget.funcionarioModel!.sobrenome;
+      // _enderecoController.text = widget.funcionarioModel!.endereco;
+      // _telefoneController.text = widget.funcionarioModel!.telefone;
     }
     super.initState();
   }
@@ -74,9 +74,9 @@ class _FuncionarioPageState extends State<FuncionarioForm> {
                         await FuncionarioInsertDataSource().insert(
                           funcionario: FuncionarioModel(
                             nome: _nomeController.text,
-                            sobrenome: _sobrenomeController.text,
-                            endereco: _enderecoController.text,
-                            telefone: _telefoneController.text,
+                            // sobrenome: _sobrenomeController.text,
+                            // endereco: _enderecoController.text,
+                            // telefone: _telefoneController.text,
                           ),
                         );
                       } else {
@@ -85,9 +85,9 @@ class _FuncionarioPageState extends State<FuncionarioForm> {
                             funcionarioID:
                                 widget.funcionarioModel!.funcionarioID,
                             nome: _nomeController.text,
-                            sobrenome: _sobrenomeController.text,
-                            endereco: _enderecoController.text,
-                            telefone: _telefoneController.text,
+                            // sobrenome: _sobrenomeController.text,
+                            // endereco: _enderecoController.text,
+                            // telefone: _telefoneController.text,
                           ),
                         );
                       }

@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{630F4B2F-B8FF-4FCD-82F2-A8F8B3C365D8}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DM_Aspnet_Webapi/Data/AppDbContext.cs">
+    <Files>
+      <File FileName="DM_Aspnet_Webapi/Program.cs" Line="46" Column="4" />
+      <File FileName="DM_Aspnet_Webapi/Controllers/WeatherForecastController.cs" Line="7" Column="39" />
+      <File FileName="DM_Aspnet_Webapi/DM_Aspnet_Webapi.csproj" />
+      <File FileName="DM_Aspnet_Webapi/Dockerfile" Line="17" Column="32" />
+      <File FileName="DM_Aspnet_Webapi/. dockerignore" Line="1" Column="7" />
+      <File FileName="DM_Aspnet_Webapi/Data/AppDbContext.cs" Line="19" Column="55" />
+      <File FileName="DM_Aspnet_Webapi/Model/Funcionario.cs" Line="11" Column="1" />
+      <File FileName="DM_Aspnet_Webapi/docker-compose.yml" Line="12" Column="2" />
+      <File FileName="DM_Aspnet_Webapi/appsettings.json" Line="3" Column="32" />
+      <File FileName="DM_Aspnet_Webapi/Controllers/FuncionariosController.cs" Line="105" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="aula_06" expanded="True">
+            <Node name="DM_Aspnet_Webapi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="AppDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DM__Aspnet__Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/DM_Aspnet_Webapi.props" />
+</Project>
