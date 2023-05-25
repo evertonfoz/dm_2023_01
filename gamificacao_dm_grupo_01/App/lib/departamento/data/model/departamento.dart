@@ -8,7 +8,7 @@ class DepartamentoModel extends DepartamentoEntity {
   DepartamentoModel({
     super.departamentoID,
     required super.nome,
-    required super.descricao,
+    // required super.descricao,
   });
 
   factory DepartamentoModel.fromJson(Map<String, dynamic> json) =>

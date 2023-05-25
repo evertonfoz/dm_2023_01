@@ -7,6 +7,7 @@ import '../../pages/departamento/departamento_new.dart';
 import '../../shared/widgets/app_listtile.dart';
 import '../../widgets/drawer_pages.dart';
 import '../data/datasources/list.dart';
+import '../data/datasources/remote_api/list.dart';
 
 class DepartamentoList extends StatefulWidget {
   const DepartamentoList({super.key});
@@ -28,7 +29,7 @@ class _FuncionarioPageState extends State<DepartamentoList> {
       body: Padding(
         padding: const EdgeInsets.only(top: 2),
         child: FutureBuilder<List<DepartamentoModel>>(
-          future: DepartamentoListDataSource().getAll(),
+          future: DepartamentoListRemoteAPIDataSource().getAll(),
           initialData: const [],
           builder: (BuildContext context, AsyncSnapshot snapshot) {
             switch (snapshot.connectionState) {
@@ -50,7 +51,7 @@ class _FuncionarioPageState extends State<DepartamentoList> {
                     return AppListTile(
                       isOdd: index.isOdd,
                       title: departamento.nome,
-                      line01Text: departamento.descricao,
+                      line01Text: 'departamento.descricao',
                       imageURL:
                           'https://unicardio.com.br/wp-content/uploads/2020/11/4-cuidados-com-o-coracao-das-criancas.png',
                     );

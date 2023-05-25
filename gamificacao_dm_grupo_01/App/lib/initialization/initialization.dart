@@ -29,7 +29,7 @@ class TaskManagerApp extends StatelessWidget {
       return MaterialApp(
         title: 'Pfe',
         routes: {
-          '/': (context) => FuncionarioList(),
+          '/': (context) => const DepartamentoList(),
           '/funcionario': (context) => FuncionarioList(),
           '/departamento': (context) => const DepartamentoList(),
           '/projeto': (context) => ProjetoList(),
